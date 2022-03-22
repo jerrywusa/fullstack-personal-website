@@ -1,7 +1,7 @@
 import Particles from "react-tsparticles";
 import style from "../../sass/WebParticles.module.scss";
 
-function WebParticles({ backgroundColor }) {
+function WebParticles(props) {
     const particlesInit = (main) => {
         console.log(main);
 
@@ -18,9 +18,7 @@ function WebParticles({ backgroundColor }) {
             loaded={particlesLoaded}
             options={{
                 background: {
-                    color: {
-                        // value: backgroundColor,
-                    },
+                    color: {},
                     position: "50% 50%",
                     repeat: "no-repeat",
                     size: "cover",

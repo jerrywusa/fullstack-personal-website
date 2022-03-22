@@ -6013,9 +6013,6 @@ var App = /*#__PURE__*/function (_Component) {
           title: "Work Experience",
           revealAnimation: {
             right: true
-          },
-          webParticles: {
-            backgroundColor: blue
           }
         },
         page2: {
@@ -6391,9 +6388,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function WebParticles(_ref) {
-  var backgroundColor = _ref.backgroundColor;
-
+function WebParticles(props) {
   var particlesInit = function particlesInit(main) {
     console.log(main); // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
   };
@@ -6407,8 +6402,7 @@ function WebParticles(_ref) {
     loaded: particlesLoaded,
     options: {
       background: {
-        color: {// value: backgroundColor,
-        },
+        color: {},
         position: "50% 50%",
         repeat: "no-repeat",
         size: "cover"
