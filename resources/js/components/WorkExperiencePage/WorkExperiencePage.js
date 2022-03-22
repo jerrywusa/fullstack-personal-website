@@ -4,6 +4,7 @@ import TimeLine from "./TimeLine";
 import IconLinks from "./IconLinks";
 import Bounce from "react-reveal/Bounce";
 import style from "../../../sass/WorkExperiencePage/WorkExperiencePage.module.scss";
+import WebParticles from "../WebParticles";
 
 // consider refactoring work timeline to https://www.npmjs.com/package/react-vertical-timeline-component
 function WorkExperiencePage({ bindScrollSnap, page1, page2, page3 }) {
@@ -15,13 +16,19 @@ function WorkExperiencePage({ bindScrollSnap, page1, page2, page3 }) {
 
     return (
         <div className={style["container"]} ref={container}>
+            <div className={style["web-particles-container"]}>
+                <WebParticles
+                // backgroundColor={
+                //     // page1.webParticles.backgroundColor
+                //     "page1.backgroundColor"
+                // }
+                />
+            </div>
             <Page
                 content={
-                    <>
-                        <Bounce right={page1.revealAnimation.right}>
-                            <p className={style["title-text"]}>{page1.title}</p>
-                        </Bounce>
-                    </>
+                    <Bounce right={page1.revealAnimation.right}>
+                        <p className={style["title-text"]}>{page1.title}</p>
+                    </Bounce>
                 }
                 backgroundColor={page1.backgroundColor}
             />

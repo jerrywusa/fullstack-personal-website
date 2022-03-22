@@ -147,6 +147,9 @@ class App extends Component {
                     revealAnimation: {
                         right: true,
                     },
+                    webParticles: {
+                        backgroundColor: blue,
+                    },
                 },
                 page2: {
                     backgroundColor: blue,

@@ -9,24 +9,29 @@ $grey: #a89984;
 $white: #ebdbb2;
 
 .container {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: overlay;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: overlay;
 }
 
 .title-text {
-  color: $white;
-  text-align: left;
-  font-size: 80pt;
-  margin-top: 20%;
-  margin-left: 5%;
+    color: $white;
+    text-align: left;
+    font-size: 80pt;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.web-particles-container {
+    z-index: 0;
+    position: relative;
 }
 
 .icon-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
