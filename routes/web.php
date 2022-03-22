@@ -17,6 +17,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::view('/example', 'example');
-
 Route::view('/', 'root');
