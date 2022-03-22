@@ -17,12 +17,7 @@ function WorkExperiencePage({ bindScrollSnap, page1, page2, page3 }) {
     return (
         <div className={style["container"]} ref={container}>
             <div className={style["web-particles-container"]}>
-                <WebParticles
-                // backgroundColor={
-                //     // page1.webParticles.backgroundColor
-                //     "page1.backgroundColor"
-                // }
-                />
+                <WebParticles />
             </div>
             <Page
                 content={

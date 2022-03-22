@@ -1,5 +1,4 @@
 import Particles from "react-tsparticles";
-import style from "../../sass/WebParticles.module.scss";
 
 function WebParticles(props) {
     const particlesInit = (main) => {
