@@ -12059,7 +12059,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".U0\\+Yevh1QvJauliL36RSVA\\=\\= {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.ogkJPUx8IobLekoLia6rZA\\=\\= {\n  margin-top: 0px;\n  margin-bottom: 2vw;\n  color: #ebdbb2;\n  font-size: 3vw;\n  font-family: arial black;\n}\n\n.dz7vMAPaeVplPYXua16p7Q\\=\\= {\n  height: 15vw;\n  transition: transform 100ms ease-in-out;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  -webkit-user-drag: none;\n}\n\n.dz7vMAPaeVplPYXua16p7Q\\=\\=:hover {\n  transition: transform 100ms ease-in-out;\n  transform: scale(1.05);\n  cursor: pointer;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".U0\\+Yevh1QvJauliL36RSVA\\=\\= {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.ogkJPUx8IobLekoLia6rZA\\=\\= {\n  margin-top: 0px;\n  margin-bottom: 2vw;\n  color: #ebdbb2;\n  font-size: 3vw;\n  font-family: arial black;\n}\n\n.dz7vMAPaeVplPYXua16p7Q\\=\\= {\n  height: 15vw;\n  transition: transform 100ms ease-in-out;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  -webkit-user-drag: none;\n}\n\n.dz7vMAPaeVplPYXua16p7Q\\=\\=:hover {\n  cursor: pointer;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"container": "U0+Yevh1QvJauliL36RSVA==",

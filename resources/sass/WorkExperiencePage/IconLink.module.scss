@@ -9,28 +9,26 @@ $grey: #a89984;
 $white: #ebdbb2;
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title-text {
-  margin-top: 0px;
-  margin-bottom: 2vw;
-  color: $white;
-  font-size: 3vw;
-  font-family: arial black;
+    margin-top: 0px;
+    margin-bottom: 2vw;
+    color: $white;
+    font-size: 3vw;
+    font-family: arial black;
 }
 
 .icon {
-  height: 15vw;
-  transition: transform 100ms ease-in-out;
-  user-select: none;
-  -webkit-user-drag: none;
+    height: 15vw;
+    transition: transform 100ms ease-in-out;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .icon:hover {
-  transition: transform 100ms ease-in-out;
-  transform: scale(1.05);
-  cursor: pointer;
+    cursor: pointer;
 }
