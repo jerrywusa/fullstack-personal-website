@@ -5548,7 +5548,7 @@ function SpotifyPlaylist(_ref) {
     },
     src: src,
     frameBorder: "0",
-    allowfullscreen: "",
+    allowFullScreen: "",
     allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
   });
 }
@@ -5580,10 +5580,12 @@ function SpotifyPlaylists(_ref) {
   var playlists = _ref.playlists;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: playlists.map(function (_ref2) {
-      var src = _ref2.src;
+      var title = _ref2.title,
+          src = _ref2.src,
+          uid = _ref2.uid;
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_SpotifyPlaylist__WEBPACK_IMPORTED_MODULE_1__["default"], {
         src: src
-      });
+      }, uid);
     })
   });
 }
@@ -5992,13 +5994,16 @@ var App = /*#__PURE__*/function (_Component) {
           backgroundColor: yellow,
           playlists: [{
             title: "angry classical",
-            src: "https://open.spotify.com/embed/playlist/2NaXb74rbrN8iTATiEEvwp?utm_source=generator&theme=0"
+            src: "https://open.spotify.com/embed/playlist/2NaXb74rbrN8iTATiEEvwp?utm_source=generator&theme=0",
+            uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)()
           }, {
             title: "rock ‘n metal",
-            src: "https://open.spotify.com/embed/playlist/5EwM5JAv5ojLCVAJAOZjPG?utm_source=generator"
+            src: "https://open.spotify.com/embed/playlist/5EwM5JAv5ojLCVAJAOZjPG?utm_source=generator",
+            uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)()
           }, {
             title: "pop",
-            src: "https://open.spotify.com/embed/playlist/1epzb6d4ZnPWNxDo9SDdiJ?utm_source=generator"
+            src: "https://open.spotify.com/embed/playlist/1epzb6d4ZnPWNxDo9SDdiJ?utm_source=generator",
+            uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)()
           }]
         }
       },

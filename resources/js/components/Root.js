@@ -125,14 +125,17 @@ class App extends Component {
                         {
                             title: "angry classical",
                             src: "https://open.spotify.com/embed/playlist/2NaXb74rbrN8iTATiEEvwp?utm_source=generator&theme=0",
+                            uid: uid(),
                         },
                         {
                             title: "rock ‘n metal",
                             src: "https://open.spotify.com/embed/playlist/5EwM5JAv5ojLCVAJAOZjPG?utm_source=generator",
+                            uid: uid(),
                         },
                         {
                             title: "pop",
                             src: "https://open.spotify.com/embed/playlist/1epzb6d4ZnPWNxDo9SDdiJ?utm_source=generator",
+                            uid: uid(),
                         },
                     ],
                 },

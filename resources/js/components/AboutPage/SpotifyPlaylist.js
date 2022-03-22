@@ -9,7 +9,7 @@ function SpotifyPlaylist({ src }) {
             style={{ borderRadius: 12 + "px" }}
             src={src}
             frameBorder="0"
-            allowfullscreen=""
+            allowFullScreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         ></iframe>
     );
