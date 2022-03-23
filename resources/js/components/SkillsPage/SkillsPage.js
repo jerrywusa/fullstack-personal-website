@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Page from "../Page";
+import Page from "../shared/Page";
 import SkillBar from "react-skillbars";
 import Zoom from "react-reveal/Zoom";
 import style from "../../../sass/SkillsPage/SkillsPage.module.scss";

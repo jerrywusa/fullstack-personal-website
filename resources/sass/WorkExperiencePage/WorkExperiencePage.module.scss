@@ -22,11 +22,7 @@ $white: #ebdbb2;
     margin-top: 20%;
     margin-left: 5%;
     user-select: none;
-}
-
-.web-particles-container {
-    z-index: 0;
-    position: relative;
+    z-index: 2;
 }
 
 .icon-container {
@@ -35,4 +31,10 @@ $white: #ebdbb2;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 2;
+}
+
+.web-particles-container {
+    z-index: 0;
+    position: relative;
 }

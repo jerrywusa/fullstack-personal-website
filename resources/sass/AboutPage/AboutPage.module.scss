@@ -9,24 +9,26 @@ $grey: #a89984;
 $white: #ebdbb2;
 
 .container {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: overlay;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    z-index: 1;
 }
 
 .title-text {
-  font-size: 80pt;
-  margin-top: 8vh;
-  margin-bottom: 8vh;
-  margin-left: 6vw;
-  color: $white;
+    font-size: 80pt;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    margin-left: 6vw;
+    color: $white;
+    z-index: 1;
 }
 
 .playlist-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }

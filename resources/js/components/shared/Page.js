@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../sass/Page.module.scss";
+import style from "../../../sass/shared/Page.module.scss";
 function Page({ backgroundColor, content }) {
     return (
         <div

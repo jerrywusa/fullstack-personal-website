@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from "../../../sass/AboutPage/AboutPage.module.scss";
 import TypingText from "./TypingText";
-import Page from "../Page";
+import Page from "../shared/Page";
 import SpotifyPlaylists from "./SpotifyPlaylists";
 import Bounce from "react-reveal";
 
@@ -23,40 +23,38 @@ function AboutPage({ bindScrollSnap, page1, page2 }) {
     });
 
     return (
-        <>
-            <div className={style["container"]} ref={container}>
-                <Page
-                    backgroundColor={page1.backgroundColor}
-                    content={
-                        <TypingText
-                            staticText={page1.typingText.staticText}
-                            sequence={page1.typingText.sequence}
-                            revealAnimation={page1.typingText.revealAnimation}
-                        />
-                    }
-                />
-                <Page
-                    backgroundColor={page2.backgroundColor}
-                    content={
-                        <>
-                            <Bounce bottom>
-                                <p className={style["title-text"]}>
-                                    I enjoy listening to{" "}
-                                    <b>
-                                        <span style={{ color: darkgrey }}>
-                                            music
-                                        </span>
-                                    </b>
-                                </p>
-                            </Bounce>
-                            <div className={style["playlist-container"]}>
-                                <SpotifyPlaylists playlists={page2.playlists} />
-                            </div>
-                        </>
-                    }
-                />
-            </div>
-        </>
+        <div className={style["container"]} ref={container}>
+            <Page
+                backgroundColor={page1.backgroundColor}
+                content={
+                    <TypingText
+                        staticText={page1.typingText.staticText}
+                        sequence={page1.typingText.sequence}
+                        revealAnimation={page1.typingText.revealAnimation}
+                    />
+                }
+            />
+            <Page
+                backgroundColor={page2.backgroundColor}
+                content={
+                    <>
+                        <Bounce bottom>
+                            <p className={style["title-text"]}>
+                                I enjoy listening to{" "}
+                                <b>
+                                    <span style={{ color: darkgrey }}>
+                                        music
+                                    </span>
+                                </b>
+                            </p>
+                        </Bounce>
+                        <div className={style["playlist-container"]}>
+                            <SpotifyPlaylists playlists={page2.playlists} />
+                        </div>
+                    </>
+                }
+            />
+        </div>
     );
 }
 

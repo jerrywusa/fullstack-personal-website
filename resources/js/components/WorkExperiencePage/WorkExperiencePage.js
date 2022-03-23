@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Page from "../Page";
+import Page from "../shared/Page";
 import TimeLine from "./TimeLine";
 import IconLinks from "./IconLinks";
 import Bounce from "react-reveal/Bounce";
 import style from "../../../sass/WorkExperiencePage/WorkExperiencePage.module.scss";
-import WebParticles from "../WebParticles";
+import WebParticles from "../shared/WebParticles";
 
 // consider refactoring work timeline to https://www.npmjs.com/package/react-vertical-timeline-component
 function WorkExperiencePage({ bindScrollSnap, page1, page2, page3 }) {
