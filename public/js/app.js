@@ -5661,10 +5661,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _Tile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tile */ "./resources/js/components/HomePage/Tile.js");
 /* harmony import */ var _sass_HomePage_HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../sass/HomePage/HomePage.module.scss */ "./resources/sass/HomePage/HomePage.module.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _shared_BackgroundMaskParticles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/BackgroundMaskParticles */ "./resources/js/components/shared/BackgroundMaskParticles.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
  // future idea: opaque bright blob that follows mouse and leaves a trace
+
 
 
 
@@ -5672,16 +5675,19 @@ function HomePage(_ref) {
   var tileRipple = _ref.tileRipple,
       timeoutDuration = _ref.timeoutDuration,
       tiles = _ref.tiles;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: _sass_HomePage_HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].container,
-    children: tiles.map(function (_ref2) {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: _sass_HomePage_HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"]["background-mask-particles-container"],
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_shared_BackgroundMaskParticles__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+    }), tiles.map(function (_ref2) {
       var title = _ref2.title,
           description = _ref2.description,
           position = _ref2.position,
           pathName = _ref2.pathName,
           revealAnimation = _ref2.revealAnimation,
           uid = _ref2.uid;
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Tile__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Tile__WEBPACK_IMPORTED_MODULE_1__["default"], {
         tileRipple: tileRipple,
         timeoutDuration: timeoutDuration,
         title: title,
@@ -5690,7 +5696,7 @@ function HomePage(_ref) {
         pathName: pathName,
         revealAnimation: revealAnimation
       }, uid);
-    })
+    })]
   });
 }
 
@@ -6685,6 +6691,146 @@ function WorkExperiencePage(_ref) {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (WorkExperiencePage);
+
+/***/ }),
+
+/***/ "./resources/js/components/shared/BackgroundMaskParticles.js":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/shared/BackgroundMaskParticles.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_tsparticles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-tsparticles */ "./node_modules/react-tsparticles/index.js");
+/* harmony import */ var react_tsparticles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_tsparticles__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function BackgroundMaskParticles(props) {
+  var particlesInit = function particlesInit(main) {
+    console.log(main); // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  };
+
+  var particlesLoaded = function particlesLoaded(container) {
+    console.log(container);
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)((react_tsparticles__WEBPACK_IMPORTED_MODULE_0___default()), {
+    init: particlesInit,
+    loaded: particlesLoaded,
+    options: {
+      background: {
+        color: {
+          value: "#ffffff"
+        },
+        image: "url('https://particles.js.org/images/background3.jpg')",
+        position: "50% 50%",
+        repeat: "no-repeat",
+        size: "cover"
+      },
+      backgroundMask: {
+        cover: {
+          color: {
+            value: {
+              r: 40,
+              g: 40,
+              b: 40
+            }
+          }
+        },
+        enable: true
+      },
+      fullScreen: {
+        zIndex: 1
+      },
+      interactivity: {
+        events: {
+          onClick: {
+            enable: false,
+            mode: "push"
+          },
+          onHover: {
+            enable: true,
+            mode: "bubble",
+            parallax: {
+              force: 60
+            }
+          }
+        },
+        modes: {
+          bubble: {
+            distance: 400,
+            duration: 2,
+            opacity: 1,
+            size: 100
+          },
+          grab: {
+            distance: 400
+          }
+        }
+      },
+      particles: {
+        color: {
+          value: "#ffffff"
+        },
+        links: {
+          color: {
+            value: "#ffffff"
+          },
+          distance: 150,
+          enable: true
+        },
+        move: {
+          attract: {
+            rotate: {
+              x: 600,
+              y: 1200
+            }
+          },
+          enable: true,
+          outModes: {
+            bottom: "out",
+            left: "out",
+            right: "out",
+            top: "out"
+          }
+        },
+        number: {
+          density: {
+            enable: true
+          },
+          value: 80
+        },
+        opacity: {
+          animation: {
+            speed: 1,
+            minimumValue: 0.1
+          }
+        },
+        size: {
+          random: {
+            enable: true
+          },
+          value: {
+            min: 1,
+            max: 30
+          },
+          animation: {
+            speed: 40,
+            minimumValue: 0.1
+          }
+        }
+      }
+    }
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BackgroundMaskParticles);
 
 /***/ }),
 
@@ -12193,10 +12339,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".nITaZKFUZh74EyJ31us-vw\\=\\= {\n  width: 100vw;\n  height: 100vh;\n  background-color: #ebdbb2;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".nITaZKFUZh74EyJ31us-vw\\=\\= {\n  width: 100vw;\n  height: 100vh;\n  background-color: #ebdbb2;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n}\n\n._0N\\+rw1VFHyZPFW8vj-RbEA\\=\\= {\n  z-index: 0;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"container": "nITaZKFUZh74EyJ31us-vw=="
+	"container": "nITaZKFUZh74EyJ31us-vw==",
+	"background-mask-particles-container": "_0N+rw1VFHyZPFW8vj-RbEA=="
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -12220,7 +12367,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".jq\\+chgq77Tpmiwc9K0C82w\\=\\= {\n  width: 50%;\n  height: 50%;\n}\n\n.\\+nsfoJ\\+v7VWyevq8toQIsA\\=\\= {\n  margin-top: 22%;\n  margin-left: auto;\n  margin-right: auto;\n  font-size: xx-large;\n  font-family: \"Courier New\", Courier, monospace;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  block-size: -webkit-fit-content;\n  block-size: -moz-fit-content;\n  block-size: fit-content;\n  align-items: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  color: #ebdbb2;\n}\n\n.\\+nsfoJ\\+v7VWyevq8toQIsA\\=\\=:hover {\n  font-weight: bold;\n}\n\n.sIOA898W\\+tHuwwQCy-1eHw\\=\\= {\n  margin-left: auto;\n  margin-right: auto;\n  font-size: x-large;\n  font-family: \"Courier New\", Courier, monospace;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  block-size: -webkit-fit-content;\n  block-size: -moz-fit-content;\n  block-size: fit-content;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  color: #ebdbb2;\n  opacity: 0;\n  transition: opacity 750ms;\n}\n\n.sIOA898W\\+tHuwwQCy-1eHw\\=\\=:hover {\n  font-weight: bold;\n}\n\n.Yya3fDE00nfYXnFiGZZ\\+PQ\\=\\= {\n  width: 50%;\n  height: 50%;\n  background-color: #282828;\n  color: white;\n  position: absolute;\n  transition: box-shadow 250ms ease-out;\n  position: fixed;\n}\n\n.Yya3fDE00nfYXnFiGZZ\\+PQ\\=\\=:hover {\n  cursor: pointer;\n}\n\n.Yya3fDE00nfYXnFiGZZ\\+PQ\\=\\=:hover .sIOA898W\\+tHuwwQCy-1eHw\\=\\= {\n  opacity: 1;\n}\n\n#npE40LDoqs9mlm0z1fhioQ\\=\\=:hover {\n  box-shadow: inset 50vw 0 0.001px #d79921;\n}\n\n#gV7-82C5MjcKpwiP46F8jA\\=\\=:hover {\n  box-shadow: inset -50vw 0 0.001px #458588;\n}\n\n#xfaTa9VXVrhAt-EztkUXxg\\=\\=:hover {\n  box-shadow: inset 50vw 0 0 0.001px #b16286;\n}\n\n#LkBh0KLqZN1ziAPI9ArZgg\\=\\=:hover {\n  box-shadow: inset -50vw 0 0 0.001px #98971a;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".jq\\+chgq77Tpmiwc9K0C82w\\=\\= {\n  width: 50%;\n  height: 50%;\n  opacity: 0.9;\n}\n\n.\\+nsfoJ\\+v7VWyevq8toQIsA\\=\\= {\n  margin-top: 22%;\n  margin-left: auto;\n  margin-right: auto;\n  font-size: xx-large;\n  font-family: \"Courier New\", Courier, monospace;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  block-size: -webkit-fit-content;\n  block-size: -moz-fit-content;\n  block-size: fit-content;\n  align-items: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  color: #ebdbb2;\n}\n\n.\\+nsfoJ\\+v7VWyevq8toQIsA\\=\\=:hover {\n  font-weight: bold;\n}\n\n.sIOA898W\\+tHuwwQCy-1eHw\\=\\= {\n  margin-left: auto;\n  margin-right: auto;\n  font-size: x-large;\n  font-family: \"Courier New\", Courier, monospace;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  block-size: -webkit-fit-content;\n  block-size: -moz-fit-content;\n  block-size: fit-content;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  color: #ebdbb2;\n  opacity: 0;\n  transition: opacity 750ms;\n}\n\n.sIOA898W\\+tHuwwQCy-1eHw\\=\\=:hover {\n  font-weight: bold;\n}\n\n.Yya3fDE00nfYXnFiGZZ\\+PQ\\=\\= {\n  width: 50%;\n  height: 50%;\n  background-color: #282828;\n  color: white;\n  position: absolute;\n  transition: box-shadow 250ms ease-out;\n  position: fixed;\n}\n\n.Yya3fDE00nfYXnFiGZZ\\+PQ\\=\\=:hover {\n  cursor: pointer;\n}\n\n.Yya3fDE00nfYXnFiGZZ\\+PQ\\=\\=:hover .sIOA898W\\+tHuwwQCy-1eHw\\=\\= {\n  opacity: 1;\n}\n\n#npE40LDoqs9mlm0z1fhioQ\\=\\=:hover {\n  box-shadow: inset 50vw 0 0.001px #d79921;\n}\n\n#gV7-82C5MjcKpwiP46F8jA\\=\\=:hover {\n  box-shadow: inset -50vw 0 0.001px #458588;\n}\n\n#xfaTa9VXVrhAt-EztkUXxg\\=\\=:hover {\n  box-shadow: inset 50vw 0 0 0.001px #b16286;\n}\n\n#LkBh0KLqZN1ziAPI9ArZgg\\=\\=:hover {\n  box-shadow: inset -50vw 0 0 0.001px #98971a;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"container": "jq+chgq77Tpmiwc9K0C82w==",

@@ -9,10 +9,14 @@ $grey: #a89984;
 $white: #ebdbb2;
 
 .container {
-  width: 100vw;
-  height: 100vh;
-  background-color: $white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.background-mask-particles-container {
+    z-index: 0;
 }
