@@ -5459,7 +5459,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
 function AboutPage(_ref) {
   var bindScrollSnap = _ref.bindScrollSnap,
       particles = _ref.particles,
@@ -5490,41 +5489,35 @@ function AboutPage(_ref) {
       hoverParticleColor: particles.hoverParticleColor,
       onClick: particles.onClick,
       onHover: particles.onHover
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)((react_reveal_Reveal__WEBPACK_IMPORTED_MODULE_6___default()), {
-      right: true,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        backgroundColor: page1.backgroundColor,
-        content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_TypingText__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          staticText: page1.typingText.staticText,
-          sequence: page1.typingText.sequence,
-          revealAnimation: page1.typingText.revealAnimation
-        })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      backgroundColor: page1.backgroundColor,
+      content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_TypingText__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        staticText: page1.typingText.staticText,
+        sequence: page1.typingText.sequence,
+        revealAnimation: page1.typingText.revealAnimation
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)((react_reveal_Reveal__WEBPACK_IMPORTED_MODULE_6___default()), {
-      left: true,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        backgroundColor: page2.backgroundColor,
-        content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)((react_reveal_Reveal__WEBPACK_IMPORTED_MODULE_6___default()), {
-            bottom: true,
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
-              className: _sass_AboutPage_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"]["title-text"],
-              children: ["I enjoy listening to", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("b", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
-                  style: {
-                    color: darkgrey
-                  },
-                  children: "music"
-                })
-              })]
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-            className: _sass_AboutPage_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"]["playlist-container"],
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_SpotifyPlaylists__WEBPACK_IMPORTED_MODULE_4__["default"], {
-              playlists: page2.playlists
-            })
-          })]
-        })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      backgroundColor: page2.backgroundColor,
+      content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)((react_reveal_Reveal__WEBPACK_IMPORTED_MODULE_6___default()), {
+          bottom: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
+            className: _sass_AboutPage_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"]["title-text"],
+            children: ["I enjoy listening to", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("b", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
+                style: {
+                  color: darkgrey
+                },
+                children: "music"
+              })
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+          className: _sass_AboutPage_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"]["playlist-container"],
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_SpotifyPlaylists__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            playlists: page2.playlists
+          })
+        })]
       })
     })]
   });
