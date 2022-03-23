@@ -5651,6 +5651,32 @@ function TypingText(_ref) {
 
 /***/ }),
 
+/***/ "./resources/js/components/BlogPage/BlogPage.js":
+/*!******************************************************!*\
+  !*** ./resources/js/components/BlogPage/BlogPage.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function BlogPage() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
+    children: "hello world"
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlogPage);
+
+/***/ }),
+
 /***/ "./resources/js/components/HomePage/HomePage.js":
 /*!******************************************************!*\
   !*** ./resources/js/components/HomePage/HomePage.js ***!
@@ -5822,21 +5848,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
 /* harmony import */ var uid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! uid */ "./node_modules/uid/dist/index.mjs");
 /* harmony import */ var _sass_Root_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../sass/Root.module.scss */ "./resources/sass/Root.module.scss");
 /* harmony import */ var scroll_snap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! scroll-snap */ "./node_modules/scroll-snap/dist/esm/index.js");
 /* harmony import */ var _HomePage_HomePage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HomePage/HomePage */ "./resources/js/components/HomePage/HomePage.js");
 /* harmony import */ var _AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AboutPage/AboutPage */ "./resources/js/components/AboutPage/AboutPage.js");
-/* harmony import */ var _SkillsPage_SkillsPage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SkillsPage/SkillsPage */ "./resources/js/components/SkillsPage/SkillsPage.js");
-/* harmony import */ var _WorkExperiencePage_WorkExperiencePage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./WorkExperiencePage/WorkExperiencePage */ "./resources/js/components/WorkExperiencePage/WorkExperiencePage.js");
-/* harmony import */ var _WorkExperiencePage_work_icon_v1_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./WorkExperiencePage/work_icon_v1.png */ "./resources/js/components/WorkExperiencePage/work_icon_v1.png");
-/* harmony import */ var _WorkExperiencePage_star_icon_v1_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./WorkExperiencePage/star_icon_v1.png */ "./resources/js/components/WorkExperiencePage/star_icon_v1.png");
-/* harmony import */ var _WorkExperiencePage_happy_star_icon_v1_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./WorkExperiencePage/happy_star_icon_v1.png */ "./resources/js/components/WorkExperiencePage/happy_star_icon_v1.png");
-/* harmony import */ var _WorkExperiencePage_resume_icon_v4_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./WorkExperiencePage/resume_icon_v4.png */ "./resources/js/components/WorkExperiencePage/resume_icon_v4.png");
-/* harmony import */ var _WorkExperiencePage_linkedin_icon_v4_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./WorkExperiencePage/linkedin_icon_v4.png */ "./resources/js/components/WorkExperiencePage/linkedin_icon_v4.png");
-/* harmony import */ var _WorkExperiencePage_github_icon_v4_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./WorkExperiencePage/github_icon_v4.png */ "./resources/js/components/WorkExperiencePage/github_icon_v4.png");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _WorkExperiencePage_WorkExperiencePage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./WorkExperiencePage/WorkExperiencePage */ "./resources/js/components/WorkExperiencePage/WorkExperiencePage.js");
+/* harmony import */ var _SkillsPage_SkillsPage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SkillsPage/SkillsPage */ "./resources/js/components/SkillsPage/SkillsPage.js");
+/* harmony import */ var _BlogPage_BlogPage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./BlogPage/BlogPage */ "./resources/js/components/BlogPage/BlogPage.js");
+/* harmony import */ var _WorkExperiencePage_work_icon_v1_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./WorkExperiencePage/work_icon_v1.png */ "./resources/js/components/WorkExperiencePage/work_icon_v1.png");
+/* harmony import */ var _WorkExperiencePage_star_icon_v1_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./WorkExperiencePage/star_icon_v1.png */ "./resources/js/components/WorkExperiencePage/star_icon_v1.png");
+/* harmony import */ var _WorkExperiencePage_happy_star_icon_v1_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./WorkExperiencePage/happy_star_icon_v1.png */ "./resources/js/components/WorkExperiencePage/happy_star_icon_v1.png");
+/* harmony import */ var _WorkExperiencePage_resume_icon_v4_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./WorkExperiencePage/resume_icon_v4.png */ "./resources/js/components/WorkExperiencePage/resume_icon_v4.png");
+/* harmony import */ var _WorkExperiencePage_linkedin_icon_v4_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./WorkExperiencePage/linkedin_icon_v4.png */ "./resources/js/components/WorkExperiencePage/linkedin_icon_v4.png");
+/* harmony import */ var _WorkExperiencePage_github_icon_v4_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./WorkExperiencePage/github_icon_v4.png */ "./resources/js/components/WorkExperiencePage/github_icon_v4.png");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -5858,6 +5885,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
 
 
 
@@ -5907,10 +5935,10 @@ var App = /*#__PURE__*/function (_Component) {
         timeoutDuration: 250,
         tiles: [{
           uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
+          pathName: "about",
           title: "About Me",
           description: "who am I?",
           position: "top-left",
-          pathName: "about",
           revealAnimation: {
             left: true,
             right: false,
@@ -5921,10 +5949,10 @@ var App = /*#__PURE__*/function (_Component) {
           opacity: 1
         }, {
           uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
+          pathName: "exp",
           title: "Work Experience",
           description: "my work experience",
           position: "top-right",
-          pathName: "exp",
           revealAnimation: {
             left: false,
             right: true,
@@ -5935,30 +5963,30 @@ var App = /*#__PURE__*/function (_Component) {
           opacity: 1
         }, {
           uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
-          title: "Projects",
-          description: "zoom autojoiner, personal website, etc",
-          position: "bottom-left",
-          pathName: "projects",
-          revealAnimation: {
-            left: true,
-            right: false,
-            top: false,
-            bottom: true,
-            delay: 750
-          },
-          opacity: 1
-        }, {
-          uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
+          pathName: "skills",
           title: "Skills",
           description: "programming languages and technologies",
           position: "bottom-right",
-          pathName: "skills",
           revealAnimation: {
             left: false,
             right: true,
             top: false,
             bottom: true,
             delay: 500
+          },
+          opacity: 1
+        }, {
+          uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
+          pathName: "blog",
+          title: "Blog",
+          description: "brain dump",
+          position: "bottom-left",
+          revealAnimation: {
+            left: true,
+            right: false,
+            top: false,
+            bottom: true,
+            delay: 750
           },
           opacity: 1
         }]
@@ -6015,7 +6043,7 @@ var App = /*#__PURE__*/function (_Component) {
           backgroundColor: blue,
           workExperiences: [{
             uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
-            icon: _WorkExperiencePage_happy_star_icon_v1_png__WEBPACK_IMPORTED_MODULE_10__["default"],
+            icon: _WorkExperiencePage_happy_star_icon_v1_png__WEBPACK_IMPORTED_MODULE_11__["default"],
             iconAlt: "happy star icon",
             positionTitle: "Enterprise Engineer Intern",
             startDate: "May 2022",
@@ -6047,7 +6075,7 @@ var App = /*#__PURE__*/function (_Component) {
             emphasize: true
           }, {
             uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
-            icon: _WorkExperiencePage_star_icon_v1_png__WEBPACK_IMPORTED_MODULE_9__["default"],
+            icon: _WorkExperiencePage_star_icon_v1_png__WEBPACK_IMPORTED_MODULE_10__["default"],
             iconAlt: "star icon",
             positionTitle: "Undergraduate Researcher",
             startDate: "Sep 2021",
@@ -6078,7 +6106,7 @@ var App = /*#__PURE__*/function (_Component) {
             }
           }, {
             uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
-            icon: _WorkExperiencePage_star_icon_v1_png__WEBPACK_IMPORTED_MODULE_9__["default"],
+            icon: _WorkExperiencePage_star_icon_v1_png__WEBPACK_IMPORTED_MODULE_10__["default"],
             iconAlt: "star icon",
             positionTitle: "Software Engineer Intern",
             startDate: "Jun 2021",
@@ -6114,7 +6142,7 @@ var App = /*#__PURE__*/function (_Component) {
           icons: [{
             uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
             link: "https://docs.google.com/document/d/1b7bXyiSwDhB1Dqt6wzgj0Li0QQ1mWoHFjz5Zg7ac34s/edit?usp=sharing",
-            icon: _WorkExperiencePage_resume_icon_v4_png__WEBPACK_IMPORTED_MODULE_11__["default"],
+            icon: _WorkExperiencePage_resume_icon_v4_png__WEBPACK_IMPORTED_MODULE_12__["default"],
             iconAlt: "resume icon",
             titleText: "Resume",
             revealAnimation: {
@@ -6125,7 +6153,7 @@ var App = /*#__PURE__*/function (_Component) {
             uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
             link: "https://www.linkedin.com/in/jerryowu/",
             titleText: "LinkedIn",
-            icon: _WorkExperiencePage_linkedin_icon_v4_png__WEBPACK_IMPORTED_MODULE_12__["default"],
+            icon: _WorkExperiencePage_linkedin_icon_v4_png__WEBPACK_IMPORTED_MODULE_13__["default"],
             iconAlt: "linkedin icon",
             revealAnimation: {
               bottom: true
@@ -6133,7 +6161,7 @@ var App = /*#__PURE__*/function (_Component) {
           }, {
             uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
             link: "https://github.com/jerrywusa",
-            icon: _WorkExperiencePage_github_icon_v4_png__WEBPACK_IMPORTED_MODULE_13__["default"],
+            icon: _WorkExperiencePage_github_icon_v4_png__WEBPACK_IMPORTED_MODULE_14__["default"],
             iconAlt: "github icon",
             titleText: "GitHub",
             revealAnimation: {
@@ -6225,7 +6253,8 @@ var App = /*#__PURE__*/function (_Component) {
             }]
           }
         }
-      }
+      },
+      BlogPage: {}
     };
     return _this;
   }
@@ -6251,37 +6280,40 @@ var App = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Routes, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Routes, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
           path: "/",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_HomePage_HomePage__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_HomePage_HomePage__WEBPACK_IMPORTED_MODULE_4__["default"], {
             tileRipple: this.state.HomePage.tileRipple,
             timeoutDuration: this.state.HomePage.timeoutDuration,
             tiles: this.state.HomePage.tiles,
             particles: this.state.HomePage.particles
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
           path: "/about",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_5__["default"], {
             bindScrollSnap: this.bindScrollSnap,
             page1: this.state.AboutPage.page1,
             page2: this.state.AboutPage.page2,
             particles: this.state.AboutPage.particles
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
           path: "/exp",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_WorkExperiencePage_WorkExperiencePage__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_WorkExperiencePage_WorkExperiencePage__WEBPACK_IMPORTED_MODULE_6__["default"], {
             bindScrollSnap: this.bindScrollSnap,
             page1: this.state.WorkExperiencePage.page1,
             page2: this.state.WorkExperiencePage.page2,
             page3: this.state.WorkExperiencePage.page3
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
           path: "/skills",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_SkillsPage_SkillsPage__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_SkillsPage_SkillsPage__WEBPACK_IMPORTED_MODULE_7__["default"], {
             bindScrollSnap: this.bindScrollSnap,
             page1: this.state.SkillsPage.page1
           })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+          path: "/blog",
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__.jsx)(_BlogPage_BlogPage__WEBPACK_IMPORTED_MODULE_8__["default"], {})
         })]
       });
     }

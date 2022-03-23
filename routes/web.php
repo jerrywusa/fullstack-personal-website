@@ -21,3 +21,4 @@ Route::view('/', 'root');
 Route::view('/about', 'root');
 Route::view('/exp', 'root');
 Route::view('/skills', 'root');
+Route::view('/blog', 'root');

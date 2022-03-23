@@ -5,8 +5,9 @@ import style from "../../sass/Root.module.scss";
 import createScrollSnap from "scroll-snap";
 import HomePage from "./HomePage/HomePage";
 import AboutPage from "./AboutPage/AboutPage";
-import SkillsPage from "./SkillsPage/SkillsPage";
 import WorkExperiencePage from "./WorkExperiencePage/WorkExperiencePage";
+import SkillsPage from "./SkillsPage/SkillsPage";
+import BlogPage from "./BlogPage/BlogPage";
 import workIcon from "./WorkExperiencePage/work_icon_v1.png";
 import starIcon from "./WorkExperiencePage/star_icon_v1.png";
 import happyStarIcon from "./WorkExperiencePage/happy_star_icon_v1.png";
@@ -39,10 +40,10 @@ class App extends Component {
                 tiles: [
                     {
                         uid: uid(),
+                        pathName: "about",
                         title: "About Me",
                         description: "who am I?",
                         position: "top-left",
-                        pathName: "about",
                         revealAnimation: {
                             left: true,
                             right: false,
@@ -54,10 +55,10 @@ class App extends Component {
                     },
                     {
                         uid: uid(),
+                        pathName: "exp",
                         title: "Work Experience",
                         description: "my work experience",
                         position: "top-right",
-                        pathName: "exp",
                         revealAnimation: {
                             left: false,
                             right: true,
@@ -69,31 +70,31 @@ class App extends Component {
                     },
                     {
                         uid: uid(),
-                        title: "Projects",
-                        description: "zoom autojoiner, personal website, etc",
-                        position: "bottom-left",
-                        pathName: "projects",
-                        revealAnimation: {
-                            left: true,
-                            right: false,
-                            top: false,
-                            bottom: true,
-                            delay: 750,
-                        },
-                        opacity: 1,
-                    },
-                    {
-                        uid: uid(),
+                        pathName: "skills",
                         title: "Skills",
                         description: "programming languages and technologies",
                         position: "bottom-right",
-                        pathName: "skills",
                         revealAnimation: {
                             left: false,
                             right: true,
                             top: false,
                             bottom: true,
                             delay: 500,
+                        },
+                        opacity: 1,
+                    },
+                    {
+                        uid: uid(),
+                        pathName: "blog",
+                        title: "Blog",
+                        description: "brain dump",
+                        position: "bottom-left",
+                        revealAnimation: {
+                            left: true,
+                            right: false,
+                            top: false,
+                            bottom: true,
+                            delay: 750,
                         },
                         opacity: 1,
                     },
@@ -398,6 +399,7 @@ class App extends Component {
                     },
                 },
             },
+            BlogPage: {},
         };
     }
 
@@ -457,7 +459,6 @@ class App extends Component {
                         />
                     }
                 />
-                {/* <Route path="/projects" element={} /> */}
                 <Route
                     path="/skills"
                     element={
@@ -467,6 +468,7 @@ class App extends Component {
                         />
                     }
                 />
+                <Route path="/blog" element={<BlogPage />} />
             </Routes>
         );
     }
