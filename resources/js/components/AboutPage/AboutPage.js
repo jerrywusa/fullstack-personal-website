@@ -3,8 +3,8 @@ import style from "../../../sass/AboutPage/AboutPage.module.scss";
 import TypingText from "./TypingText";
 import Page from "../shared/Page";
 import SpotifyPlaylists from "./SpotifyPlaylists";
-import Bounce from "react-reveal";
 import BubbleParticles from "../shared/BubbleParticles";
+import Reveal from "react-reveal/Reveal";
 
 function AboutPage({ bindScrollSnap, particles, page1, page2 }) {
     const [container] = useState(React.createRef());
@@ -45,7 +45,7 @@ function AboutPage({ bindScrollSnap, particles, page1, page2 }) {
                 backgroundColor={page2.backgroundColor}
                 content={
                     <>
-                        <Bounce bottom>
+                        <Reveal bottom>
                             <p className={style["title-text"]}>
                                 I enjoy listening to{" "}
                                 <b>
@@ -54,7 +54,7 @@ function AboutPage({ bindScrollSnap, particles, page1, page2 }) {
                                     </span>
                                 </b>
                             </p>
-                        </Bounce>
+                        </Reveal>
                         <div className={style["playlist-container"]}>
                             <SpotifyPlaylists playlists={page2.playlists} />
                         </div>
