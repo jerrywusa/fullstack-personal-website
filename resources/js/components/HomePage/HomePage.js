@@ -4,11 +4,14 @@ import style from "../../../sass/HomePage/HomePage.module.scss";
 import BackgroundMaskParticles from "../shared/BackgroundMaskParticles";
 
 // future idea: opaque bright blob that follows mouse and leaves a trace
-function HomePage({ tileRipple, timeoutDuration, tiles }) {
+function HomePage({ tileRipple, timeoutDuration, tiles, particles }) {
     return (
         <div className={style["container"]}>
             <div className={style["background-mask-particles-container"]}>
-                <BackgroundMaskParticles />
+                <BackgroundMaskParticles
+                    image={particles.image}
+                    maskColor={particles.maskColor}
+                />
             </div>
             {tiles.map(
                 ({

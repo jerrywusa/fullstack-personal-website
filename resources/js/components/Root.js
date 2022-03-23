@@ -98,6 +98,14 @@ class App extends Component {
                         opacity: 0.95,
                     },
                 ],
+                particles: {
+                    maskColor: {
+                        r: 40,
+                        g: 40,
+                        b: 40,
+                    },
+                    image: "url('https://particles.js.org/images/background3.jpg')",
+                },
             },
             AboutPage: {
                 particles: {
@@ -431,6 +439,7 @@ class App extends Component {
                                 this.state.HomePage.timeoutDuration
                             }
                             tiles={this.state.HomePage.tiles}
+                            particles={this.state.HomePage.particles}
                         />
                     }
                 />
@@ -439,9 +448,9 @@ class App extends Component {
                     element={
                         <AboutPage
                             bindScrollSnap={this.bindScrollSnap}
-                            particles={this.state.AboutPage.particles}
                             page1={this.state.AboutPage.page1}
                             page2={this.state.AboutPage.page2}
+                            particles={this.state.AboutPage.particles}
                         />
                     }
                 />

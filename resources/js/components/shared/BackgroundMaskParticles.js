@@ -1,6 +1,6 @@
 import Particles from "react-tsparticles";
 
-function BackgroundMaskParticles(props) {
+function BackgroundMaskParticles({ image, maskColor }) {
     const particlesInit = (main) => {
         console.log(main);
 
@@ -20,7 +20,8 @@ function BackgroundMaskParticles(props) {
                     color: {
                         value: "#ffffff",
                     },
-                    image: "url('https://particles.js.org/images/background3.jpg')",
+                    // image: "url('https://particles.js.org/images/background3.jpg')",
+                    image: image,
                     position: "50% 50%",
                     repeat: "no-repeat",
                     size: "cover",
@@ -29,9 +30,9 @@ function BackgroundMaskParticles(props) {
                     cover: {
                         color: {
                             value: {
-                                r: 40,
-                                g: 40,
-                                b: 40,
+                                r: maskColor.r,
+                                g: maskColor.g,
+                                b: maskColor.b,
                             },
                         },
                     },

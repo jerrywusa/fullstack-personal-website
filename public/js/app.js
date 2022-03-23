@@ -5674,12 +5674,16 @@ __webpack_require__.r(__webpack_exports__);
 function HomePage(_ref) {
   var tileRipple = _ref.tileRipple,
       timeoutDuration = _ref.timeoutDuration,
-      tiles = _ref.tiles;
+      tiles = _ref.tiles,
+      particles = _ref.particles;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: _sass_HomePage_HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].container,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: _sass_HomePage_HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"]["background-mask-particles-container"],
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_shared_BackgroundMaskParticles__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_shared_BackgroundMaskParticles__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        image: particles.image,
+        maskColor: particles.maskColor
+      })
     }), tiles.map(function (_ref2) {
       var title = _ref2.title,
           description = _ref2.description,
@@ -5962,7 +5966,15 @@ var App = /*#__PURE__*/function (_Component) {
             delay: 500
           },
           opacity: 0.95
-        }]
+        }],
+        particles: {
+          maskColor: {
+            r: 40,
+            g: 40,
+            b: 40
+          },
+          image: "url('https://particles.js.org/images/background3.jpg')"
+        }
       },
       AboutPage: {
         particles: {
@@ -6258,15 +6270,16 @@ var App = /*#__PURE__*/function (_Component) {
           element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_HomePage_HomePage__WEBPACK_IMPORTED_MODULE_4__["default"], {
             tileRipple: this.state.HomePage.tileRipple,
             timeoutDuration: this.state.HomePage.timeoutDuration,
-            tiles: this.state.HomePage.tiles
+            tiles: this.state.HomePage.tiles,
+            particles: this.state.HomePage.particles
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
           path: "/about",
           element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_5__["default"], {
             bindScrollSnap: this.bindScrollSnap,
-            particles: this.state.AboutPage.particles,
             page1: this.state.AboutPage.page1,
-            page2: this.state.AboutPage.page2
+            page2: this.state.AboutPage.page2,
+            particles: this.state.AboutPage.particles
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
           path: "/exp",
@@ -6721,7 +6734,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function BackgroundMaskParticles(props) {
+function BackgroundMaskParticles(_ref) {
+  var image = _ref.image,
+      maskColor = _ref.maskColor;
+
   var particlesInit = function particlesInit(main) {
     console.log(main); // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
   };
@@ -6738,7 +6754,8 @@ function BackgroundMaskParticles(props) {
         color: {
           value: "#ffffff"
         },
-        image: "url('https://particles.js.org/images/background3.jpg')",
+        // image: "url('https://particles.js.org/images/background3.jpg')",
+        image: image,
         position: "50% 50%",
         repeat: "no-repeat",
         size: "cover"
@@ -6747,9 +6764,9 @@ function BackgroundMaskParticles(props) {
         cover: {
           color: {
             value: {
-              r: 40,
-              g: 40,
-              b: 40
+              r: maskColor.r,
+              g: maskColor.g,
+              b: maskColor.b
             }
           }
         },
