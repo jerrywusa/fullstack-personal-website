@@ -5488,35 +5488,41 @@ function AboutPage(_ref) {
       hoverParticleColor: particles.hoverParticleColor,
       onClick: particles.onClick,
       onHover: particles.onHover
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      backgroundColor: page1.backgroundColor,
-      content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_TypingText__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        staticText: page1.typingText.staticText,
-        sequence: page1.typingText.sequence,
-        revealAnimation: page1.typingText.revealAnimation
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_reveal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      right: true,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        backgroundColor: page1.backgroundColor,
+        content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_TypingText__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          staticText: page1.typingText.staticText,
+          sequence: page1.typingText.sequence,
+          revealAnimation: page1.typingText.revealAnimation
+        })
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      backgroundColor: page2.backgroundColor,
-      content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_reveal__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          bottom: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
-            className: _sass_AboutPage_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"]["title-text"],
-            children: ["I enjoy listening to", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("b", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
-                style: {
-                  color: darkgrey
-                },
-                children: "music"
-              })
-            })]
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-          className: _sass_AboutPage_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"]["playlist-container"],
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_SpotifyPlaylists__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            playlists: page2.playlists
-          })
-        })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_reveal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      left: true,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        backgroundColor: page2.backgroundColor,
+        content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_reveal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            bottom: true,
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
+              className: _sass_AboutPage_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"]["title-text"],
+              children: ["I enjoy listening to", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("b", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
+                  style: {
+                    color: darkgrey
+                  },
+                  children: "music"
+                })
+              })]
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+            className: _sass_AboutPage_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"]["playlist-container"],
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_SpotifyPlaylists__WEBPACK_IMPORTED_MODULE_4__["default"], {
+              playlists: page2.playlists
+            })
+          })]
+        })
       })
     })]
   });
@@ -5613,11 +5619,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_type_animation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-type-animation */ "./node_modules/react-type-animation/dist/index.es.js");
-/* harmony import */ var react_reveal_Bounce__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-reveal/Bounce */ "./node_modules/react-reveal/Bounce.js");
-/* harmony import */ var react_reveal_Bounce__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_reveal_Bounce__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _sass_AboutPage_TypingText_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../sass/AboutPage/TypingText.module.scss */ "./resources/sass/AboutPage/TypingText.module.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var _sass_AboutPage_TypingText_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../sass/AboutPage/TypingText.module.scss */ "./resources/sass/AboutPage/TypingText.module.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -5628,18 +5631,15 @@ function TypingText(_ref) {
   var staticText = _ref.staticText,
       sequence = _ref.sequence,
       revealAnimation = _ref.revealAnimation;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)((react_reveal_Bounce__WEBPACK_IMPORTED_MODULE_2___default()), {
-    right: revealAnimation.right,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("p", {
-      className: _sass_AboutPage_TypingText_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"]["static-text"],
-      children: [staticText, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_type_animation__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        cursor: false,
-        sequence: sequence,
-        repeat: Infinity,
-        wrapper: "b",
-        className: _sass_AboutPage_TypingText_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"]["typing-cursor"]
-      })]
-    })
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
+    className: _sass_AboutPage_TypingText_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"]["static-text"],
+    children: [staticText, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_type_animation__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      cursor: false,
+      sequence: sequence,
+      repeat: Infinity,
+      wrapper: "b",
+      className: _sass_AboutPage_TypingText_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"]["typing-cursor"]
+    })]
   });
 }
 
