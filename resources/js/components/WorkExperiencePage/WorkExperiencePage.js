@@ -16,9 +16,7 @@ function WorkExperiencePage({ bindScrollSnap, page1, page2, page3 }) {
 
     return (
         <div className={style["container"]} ref={container}>
-            <div className={style["web-particles-container"]}>
-                <WebParticles />
-            </div>
+            <WebParticles />
             <Page
                 content={
                     <Bounce right={page1.revealAnimation.right}>
