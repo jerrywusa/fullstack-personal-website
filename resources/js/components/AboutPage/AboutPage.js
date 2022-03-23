@@ -4,8 +4,9 @@ import TypingText from "./TypingText";
 import Page from "../shared/Page";
 import SpotifyPlaylists from "./SpotifyPlaylists";
 import Bounce from "react-reveal";
+import BubbleParticles from "../shared/BubbleParticles";
 
-function AboutPage({ bindScrollSnap, page1, page2 }) {
+function AboutPage({ bindScrollSnap, particles, page1, page2 }) {
     const [container] = useState(React.createRef());
 
     const darkgrey = "#282828";
@@ -24,6 +25,10 @@ function AboutPage({ bindScrollSnap, page1, page2 }) {
 
     return (
         <div className={style["container"]} ref={container}>
+            <BubbleParticles
+                particleColor={particles.particleColor}
+                hoverParticleColor={particles.hoverParticleColor}
+            />
             <Page
                 backgroundColor={page1.backgroundColor}
                 content={

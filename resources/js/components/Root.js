@@ -96,6 +96,10 @@ class App extends Component {
                 ],
             },
             AboutPage: {
+                particles: {
+                    particleColor: white,
+                    hoverParticleColor: white,
+                },
                 page1: {
                     backgroundColor: darkgrey,
                     typingText: {
@@ -423,6 +427,7 @@ class App extends Component {
                     element={
                         <AboutPage
                             bindScrollSnap={this.bindScrollSnap}
+                            particles={this.state.AboutPage.particles}
                             page1={this.state.AboutPage.page1}
                             page2={this.state.AboutPage.page2}
                         />

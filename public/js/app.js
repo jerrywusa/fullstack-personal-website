@@ -5433,7 +5433,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_Page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/Page */ "./resources/js/components/shared/Page.js");
 /* harmony import */ var _SpotifyPlaylists__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SpotifyPlaylists */ "./resources/js/components/AboutPage/SpotifyPlaylists.js");
 /* harmony import */ var react_reveal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-reveal */ "./node_modules/react-reveal/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _shared_BubbleParticles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../shared/BubbleParticles */ "./resources/js/components/shared/BubbleParticles.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -5456,8 +5457,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 function AboutPage(_ref) {
   var bindScrollSnap = _ref.bindScrollSnap,
+      particles = _ref.particles,
       page1 = _ref.page1,
       page2 = _ref.page2;
 
@@ -5477,25 +5480,28 @@ function AboutPage(_ref) {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     bindScrollSnap(container);
   });
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
     className: _sass_AboutPage_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].container,
     ref: container,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_BubbleParticles__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      particleColor: particles.particleColor,
+      hoverParticleColor: particles.hoverParticleColor
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
       backgroundColor: page1.backgroundColor,
-      content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_TypingText__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_TypingText__WEBPACK_IMPORTED_MODULE_2__["default"], {
         staticText: page1.typingText.staticText,
         sequence: page1.typingText.sequence,
         revealAnimation: page1.typingText.revealAnimation
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
       backgroundColor: page2.backgroundColor,
-      content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_reveal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_reveal__WEBPACK_IMPORTED_MODULE_5__["default"], {
           bottom: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("p", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("p", {
             className: _sass_AboutPage_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"]["title-text"],
-            children: ["I enjoy listening to", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("b", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+            children: ["I enjoy listening to", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("b", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
                 style: {
                   color: darkgrey
                 },
@@ -5503,9 +5509,9 @@ function AboutPage(_ref) {
               })
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
           className: _sass_AboutPage_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"]["playlist-container"],
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_SpotifyPlaylists__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_SpotifyPlaylists__WEBPACK_IMPORTED_MODULE_4__["default"], {
             playlists: page2.playlists
           })
         })]
@@ -5941,6 +5947,10 @@ var App = /*#__PURE__*/function (_Component) {
         }]
       },
       AboutPage: {
+        particles: {
+          particleColor: white,
+          hoverParticleColor: white
+        },
         page1: {
           backgroundColor: darkgrey,
           typingText: {
@@ -6228,6 +6238,7 @@ var App = /*#__PURE__*/function (_Component) {
           path: "/about",
           element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_5__["default"], {
             bindScrollSnap: this.bindScrollSnap,
+            particles: this.state.AboutPage.particles,
             page1: this.state.AboutPage.page1,
             page2: this.state.AboutPage.page2
           })
@@ -6667,6 +6678,159 @@ function WorkExperiencePage(_ref) {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (WorkExperiencePage);
+
+/***/ }),
+
+/***/ "./resources/js/components/shared/BubbleParticles.js":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/shared/BubbleParticles.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_tsparticles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-tsparticles */ "./node_modules/react-tsparticles/index.js");
+/* harmony import */ var react_tsparticles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_tsparticles__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+function BubbleParticles(_ref) {
+  var particleColor = _ref.particleColor,
+      hoverParticleColor = _ref.hoverParticleColor;
+
+  var particlesInit = function particlesInit(main) {
+    console.log(main); // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  };
+
+  var particlesLoaded = function particlesLoaded(container) {
+    console.log(container);
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)((react_tsparticles__WEBPACK_IMPORTED_MODULE_0___default()), {
+    init: particlesInit,
+    loaded: particlesLoaded,
+    options: {
+      background: {
+        color: {
+          // value: "#efefef",
+          value: {}
+        },
+        position: "50% 50%",
+        repeat: "no-repeat",
+        size: "cover"
+      },
+      fullScreen: {
+        zIndex: 1
+      },
+      interactivity: {
+        events: {
+          onClick: {
+            enable: true,
+            mode: "push"
+          },
+          onHover: {
+            enable: true,
+            mode: "bubble"
+          }
+        },
+        modes: {
+          bubble: {
+            distance: 400,
+            duration: 2,
+            opacity: 0.8,
+            color: {
+              value: hoverParticleColor
+            },
+            size: 40
+          },
+          grab: {
+            distance: 400
+          }
+        }
+      },
+      particles: {
+        color: {
+          value: particleColor
+        },
+        links: {
+          color: {
+            value: "#ffffff"
+          },
+          distance: 200,
+          width: 2
+        },
+        move: {
+          attract: {
+            rotate: {
+              x: 600,
+              y: 1200
+            }
+          },
+          enable: true,
+          path: {},
+          outModes: {
+            bottom: "out",
+            left: "out",
+            right: "out",
+            top: "out"
+          },
+          speed: 8,
+          spin: {}
+        },
+        number: {
+          density: {
+            enable: true
+          },
+          value: 6
+        },
+        opacity: {
+          random: {
+            enable: true,
+            minimumValue: 0.3
+          },
+          value: {
+            min: 0.3,
+            max: 0.5
+          },
+          animation: {
+            speed: 1,
+            minimumValue: 0.1
+          }
+        },
+        shape: {
+          options: {
+            polygon: {
+              sides: 6
+            },
+            star: {
+              sides: 6
+            }
+          },
+          type: "polygon"
+        },
+        size: {
+          random: {
+            enable: true,
+            minimumValue: 100
+          },
+          value: {
+            min: 100,
+            max: 160
+          },
+          animation: {
+            minimumValue: 40
+          }
+        }
+      }
+    }
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BubbleParticles);
 
 /***/ }),
 
