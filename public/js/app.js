@@ -5485,7 +5485,9 @@ function AboutPage(_ref) {
     ref: container,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_BubbleParticles__WEBPACK_IMPORTED_MODULE_6__["default"], {
       particleColor: particles.particleColor,
-      hoverParticleColor: particles.hoverParticleColor
+      hoverParticleColor: particles.hoverParticleColor,
+      onClick: particles.onClick,
+      onHover: particles.onHover
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_shared_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
       backgroundColor: page1.backgroundColor,
       content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_TypingText__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -5949,7 +5951,15 @@ var App = /*#__PURE__*/function (_Component) {
       AboutPage: {
         particles: {
           particleColor: white,
-          hoverParticleColor: white
+          hoverParticleColor: white,
+          onClick: {
+            enable: false,
+            mode: "push"
+          },
+          onHover: {
+            enable: true,
+            mode: "bubble"
+          }
         },
         page1: {
           backgroundColor: darkgrey,
@@ -6697,7 +6707,9 @@ __webpack_require__.r(__webpack_exports__);
 
 function BubbleParticles(_ref) {
   var particleColor = _ref.particleColor,
-      hoverParticleColor = _ref.hoverParticleColor;
+      hoverParticleColor = _ref.hoverParticleColor,
+      onClick = _ref.onClick,
+      onHover = _ref.onHover;
 
   var particlesInit = function particlesInit(main) {
     console.log(main); // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
@@ -6713,7 +6725,6 @@ function BubbleParticles(_ref) {
     options: {
       background: {
         color: {
-          // value: "#efefef",
           value: {}
         },
         position: "50% 50%",
@@ -6726,12 +6737,12 @@ function BubbleParticles(_ref) {
       interactivity: {
         events: {
           onClick: {
-            enable: true,
-            mode: "push"
+            enable: onClick.enable,
+            mode: onClick.mode
           },
           onHover: {
-            enable: true,
-            mode: "bubble"
+            enable: onHover.enable,
+            mode: onHover.mode
           }
         },
         modes: {
@@ -12410,13 +12421,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".Rkxn48\\+16WeoPhKwxyiyNQ\\=\\= {\n  width: 100vw;\n  height: 100vh;\n  overflow-x: hidden;\n  overflow-y: overlay;\n}\n\n.Oy1x-a9OgeUBJFFqHHyvpw\\=\\= {\n  color: #ebdbb2;\n  text-align: left;\n  font-size: 80pt;\n  margin-top: 20%;\n  margin-left: 5%;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  z-index: 2;\n}\n\n._7SHcs16H2NrOEalNEkkafw\\=\\= {\n  width: 100vw;\n  height: 100vh;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  z-index: 2;\n}\n\n._9y7MfCN5Pi1UW83NskoEhA\\=\\= {\n  z-index: 0;\n  position: relative;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".Rkxn48\\+16WeoPhKwxyiyNQ\\=\\= {\n  width: 100vw;\n  height: 100vh;\n  overflow-x: hidden;\n  overflow-y: overlay;\n}\n\n.Oy1x-a9OgeUBJFFqHHyvpw\\=\\= {\n  color: #ebdbb2;\n  text-align: left;\n  font-size: 80pt;\n  margin-top: 20%;\n  margin-left: 5%;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  z-index: 2;\n}\n\n._7SHcs16H2NrOEalNEkkafw\\=\\= {\n  width: 100vw;\n  height: 100vh;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  z-index: 2;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"container": "Rkxn48+16WeoPhKwxyiyNQ==",
 	"title-text": "Oy1x-a9OgeUBJFFqHHyvpw==",
-	"icon-container": "_7SHcs16H2NrOEalNEkkafw==",
-	"web-particles-container": "_9y7MfCN5Pi1UW83NskoEhA=="
+	"icon-container": "_7SHcs16H2NrOEalNEkkafw=="
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -28,6 +28,8 @@ function AboutPage({ bindScrollSnap, particles, page1, page2 }) {
             <BubbleParticles
                 particleColor={particles.particleColor}
                 hoverParticleColor={particles.hoverParticleColor}
+                onClick={particles.onClick}
+                onHover={particles.onHover}
             />
             <Page
                 backgroundColor={page1.backgroundColor}

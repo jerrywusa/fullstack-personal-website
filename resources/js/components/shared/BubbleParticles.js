@@ -1,6 +1,11 @@
 import Particles from "react-tsparticles";
 
-function BubbleParticles({ particleColor, hoverParticleColor }) {
+function BubbleParticles({
+    particleColor,
+    hoverParticleColor,
+    onClick,
+    onHover,
+}) {
     const particlesInit = (main) => {
         console.log(main);
 
@@ -18,7 +23,6 @@ function BubbleParticles({ particleColor, hoverParticleColor }) {
             options={{
                 background: {
                     color: {
-                        // value: "#efefef",
                         value: {},
                     },
                     position: "50% 50%",
@@ -31,12 +35,12 @@ function BubbleParticles({ particleColor, hoverParticleColor }) {
                 interactivity: {
                     events: {
                         onClick: {
-                            enable: true,
-                            mode: "push",
+                            enable: onClick.enable,
+                            mode: onClick.mode,
                         },
                         onHover: {
-                            enable: true,
-                            mode: "bubble",
+                            enable: onHover.enable,
+                            mode: onHover.mode,
                         },
                     },
                     modes: {

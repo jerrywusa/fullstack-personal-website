@@ -99,6 +99,14 @@ class App extends Component {
                 particles: {
                     particleColor: white,
                     hoverParticleColor: white,
+                    onClick: {
+                        enable: false,
+                        mode: "push",
+                    },
+                    onHover: {
+                        enable: true,
+                        mode: "bubble",
+                    },
                 },
                 page1: {
                     backgroundColor: darkgrey,
