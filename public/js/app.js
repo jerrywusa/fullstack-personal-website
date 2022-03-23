@@ -5661,13 +5661,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _Tile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tile */ "./resources/js/components/HomePage/Tile.js");
 /* harmony import */ var _sass_HomePage_HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../sass/HomePage/HomePage.module.scss */ "./resources/sass/HomePage/HomePage.module.scss");
-/* harmony import */ var _shared_BackgroundMaskParticles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/BackgroundMaskParticles */ "./resources/js/components/shared/BackgroundMaskParticles.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
  // future idea: opaque bright blob that follows mouse and leaves a trace
-
 
 
 
@@ -5676,15 +5673,9 @@ function HomePage(_ref) {
       timeoutDuration = _ref.timeoutDuration,
       tiles = _ref.tiles,
       particles = _ref.particles;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     className: _sass_HomePage_HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].container,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      className: _sass_HomePage_HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"]["background-mask-particles-container"],
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_shared_BackgroundMaskParticles__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        image: particles.image,
-        maskColor: particles.maskColor
-      })
-    }), tiles.map(function (_ref2) {
+    children: tiles.map(function (_ref2) {
       var title = _ref2.title,
           description = _ref2.description,
           position = _ref2.position,
@@ -5692,7 +5683,7 @@ function HomePage(_ref) {
           revealAnimation = _ref2.revealAnimation,
           opacity = _ref2.opacity,
           uid = _ref2.uid;
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Tile__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Tile__WEBPACK_IMPORTED_MODULE_1__["default"], {
         tileRipple: tileRipple,
         timeoutDuration: timeoutDuration,
         title: title,
@@ -5702,7 +5693,7 @@ function HomePage(_ref) {
         revealAnimation: revealAnimation,
         opacity: opacity
       }, uid);
-    })]
+    })
   });
 }
 
@@ -5923,7 +5914,7 @@ var App = /*#__PURE__*/function (_Component) {
             bottom: false,
             delay: 0
           },
-          opacity: 0.95
+          opacity: 1
         }, {
           uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
           title: "Work Experience",
@@ -5937,7 +5928,7 @@ var App = /*#__PURE__*/function (_Component) {
             bottom: false,
             delay: 250
           },
-          opacity: 0.95
+          opacity: 1
         }, {
           uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
           title: "Projects",
@@ -5951,7 +5942,7 @@ var App = /*#__PURE__*/function (_Component) {
             bottom: true,
             delay: 750
           },
-          opacity: 0.95
+          opacity: 1
         }, {
           uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
           title: "Skills",
@@ -5965,16 +5956,8 @@ var App = /*#__PURE__*/function (_Component) {
             bottom: true,
             delay: 500
           },
-          opacity: 0.95
-        }],
-        particles: {
-          maskColor: {
-            r: 40,
-            g: 40,
-            b: 40
-          },
-          image: "url('https://particles.js.org/images/background3.jpg')"
-        }
+          opacity: 1
+        }]
       },
       AboutPage: {
         particles: {
@@ -6714,150 +6697,6 @@ function WorkExperiencePage(_ref) {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (WorkExperiencePage);
-
-/***/ }),
-
-/***/ "./resources/js/components/shared/BackgroundMaskParticles.js":
-/*!*******************************************************************!*\
-  !*** ./resources/js/components/shared/BackgroundMaskParticles.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_tsparticles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-tsparticles */ "./node_modules/react-tsparticles/index.js");
-/* harmony import */ var react_tsparticles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_tsparticles__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-function BackgroundMaskParticles(_ref) {
-  var image = _ref.image,
-      maskColor = _ref.maskColor;
-
-  var particlesInit = function particlesInit(main) {
-    console.log(main); // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-  };
-
-  var particlesLoaded = function particlesLoaded(container) {
-    console.log(container);
-  };
-
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)((react_tsparticles__WEBPACK_IMPORTED_MODULE_0___default()), {
-    init: particlesInit,
-    loaded: particlesLoaded,
-    options: {
-      background: {
-        color: {
-          value: "#ffffff"
-        },
-        // image: "url('https://particles.js.org/images/background3.jpg')",
-        image: image,
-        position: "50% 50%",
-        repeat: "no-repeat",
-        size: "cover"
-      },
-      backgroundMask: {
-        cover: {
-          color: {
-            value: {
-              r: maskColor.r,
-              g: maskColor.g,
-              b: maskColor.b
-            }
-          }
-        },
-        enable: true
-      },
-      fullScreen: {
-        zIndex: 1
-      },
-      interactivity: {
-        events: {
-          onClick: {
-            enable: false,
-            mode: "push"
-          },
-          onHover: {
-            enable: true,
-            mode: "bubble",
-            parallax: {
-              force: 60
-            }
-          }
-        },
-        modes: {
-          bubble: {
-            distance: 400,
-            duration: 2,
-            opacity: 1,
-            size: 100
-          },
-          grab: {
-            distance: 400
-          }
-        }
-      },
-      particles: {
-        color: {
-          value: "#ffffff"
-        },
-        links: {
-          color: {
-            value: "#ffffff"
-          },
-          distance: 150,
-          enable: true
-        },
-        move: {
-          attract: {
-            rotate: {
-              x: 600,
-              y: 1200
-            }
-          },
-          enable: true,
-          outModes: {
-            bottom: "out",
-            left: "out",
-            right: "out",
-            top: "out"
-          }
-        },
-        number: {
-          density: {
-            enable: true
-          },
-          value: 80
-        },
-        opacity: {
-          animation: {
-            speed: 1,
-            minimumValue: 0.1
-          }
-        },
-        size: {
-          random: {
-            enable: true
-          },
-          value: {
-            min: 1,
-            max: 30
-          },
-          animation: {
-            speed: 40,
-            minimumValue: 0.1
-          }
-        }
-      }
-    }
-  });
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BackgroundMaskParticles);
 
 /***/ }),
 

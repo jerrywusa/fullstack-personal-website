@@ -50,7 +50,7 @@ class App extends Component {
                             bottom: false,
                             delay: 0,
                         },
-                        opacity: 0.95,
+                        opacity: 1,
                     },
                     {
                         uid: uid(),
@@ -65,7 +65,7 @@ class App extends Component {
                             bottom: false,
                             delay: 250,
                         },
-                        opacity: 0.95,
+                        opacity: 1,
                     },
                     {
                         uid: uid(),
@@ -80,7 +80,7 @@ class App extends Component {
                             bottom: true,
                             delay: 750,
                         },
-                        opacity: 0.95,
+                        opacity: 1,
                     },
                     {
                         uid: uid(),
@@ -95,17 +95,9 @@ class App extends Component {
                             bottom: true,
                             delay: 500,
                         },
-                        opacity: 0.95,
+                        opacity: 1,
                     },
                 ],
-                particles: {
-                    maskColor: {
-                        r: 40,
-                        g: 40,
-                        b: 40,
-                    },
-                    image: "url('https://particles.js.org/images/background3.jpg')",
-                },
             },
             AboutPage: {
                 particles: {

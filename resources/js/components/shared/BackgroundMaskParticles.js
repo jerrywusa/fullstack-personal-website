@@ -20,7 +20,6 @@ function BackgroundMaskParticles({ image, maskColor }) {
                     color: {
                         value: "#ffffff",
                     },
-                    // image: "url('https://particles.js.org/images/background3.jpg')",
                     image: image,
                     position: "50% 50%",
                     repeat: "no-repeat",
