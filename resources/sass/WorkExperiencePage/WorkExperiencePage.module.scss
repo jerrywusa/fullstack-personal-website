@@ -13,6 +13,7 @@ $white: #ebdbb2;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: overlay;
+    user-select: none;
 }
 
 .title-text {
@@ -21,7 +22,6 @@ $white: #ebdbb2;
     font-size: 80pt;
     margin-top: 20%;
     margin-left: 5%;
-    user-select: none;
     z-index: 2;
 }
 
