@@ -5,6 +5,7 @@ import Page from "../shared/Page";
 import SpotifyPlaylists from "./SpotifyPlaylists";
 import BubbleParticles from "../shared/BubbleParticles";
 import Reveal from "react-reveal/Reveal";
+import Bounce from "react-reveal/Bounce";
 
 function AboutPage({ bindScrollSnap, particles, page1, page2 }) {
     const [container] = useState(React.createRef());
@@ -34,11 +35,13 @@ function AboutPage({ bindScrollSnap, particles, page1, page2 }) {
             <Page
                 backgroundColor={page1.backgroundColor}
                 content={
-                    <TypingText
-                        staticText={page1.typingText.staticText}
-                        sequence={page1.typingText.sequence}
-                        revealAnimation={page1.typingText.revealAnimation}
-                    />
+                    <Bounce right>
+                        <TypingText
+                            staticText={page1.typingText.staticText}
+                            sequence={page1.typingText.sequence}
+                            revealAnimation={page1.typingText.revealAnimation}
+                        />
+                    </Bounce>
                 }
             />
             <Page

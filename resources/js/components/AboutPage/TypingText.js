@@ -1,6 +1,7 @@
 import React from "react";
 import TypeAnimation from "react-type-animation";
 import style from "../../../sass/AboutPage/TypingText.module.scss";
+import Bounce from "react-reveal/Bounce";
 
 function TypingText({ staticText, sequence, revealAnimation }) {
     return (
