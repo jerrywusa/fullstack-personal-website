@@ -12,6 +12,7 @@ function Tile({
     position,
     pathName,
     revealAnimation,
+    opacity,
 }) {
     const navigate = useNavigate();
     const [isHover, setHover] = useState(false);
@@ -29,6 +30,9 @@ function Tile({
             }}
             ref={ripple}
             onMouseDown={event}
+            style={{
+                opacity: opacity,
+            }}
         >
             <Bounce
                 left={revealAnimation.left}

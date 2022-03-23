@@ -50,6 +50,7 @@ class App extends Component {
                             bottom: false,
                             delay: 0,
                         },
+                        opacity: 0.95,
                     },
                     {
                         uid: uid(),
@@ -64,6 +65,7 @@ class App extends Component {
                             bottom: false,
                             delay: 250,
                         },
+                        opacity: 0.95,
                     },
                     {
                         uid: uid(),
@@ -78,6 +80,7 @@ class App extends Component {
                             bottom: true,
                             delay: 750,
                         },
+                        opacity: 0.95,
                     },
                     {
                         uid: uid(),
@@ -92,6 +95,7 @@ class App extends Component {
                             bottom: true,
                             delay: 500,
                         },
+                        opacity: 0.95,
                     },
                 ],
             },

@@ -5686,6 +5686,7 @@ function HomePage(_ref) {
           position = _ref2.position,
           pathName = _ref2.pathName,
           revealAnimation = _ref2.revealAnimation,
+          opacity = _ref2.opacity,
           uid = _ref2.uid;
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Tile__WEBPACK_IMPORTED_MODULE_1__["default"], {
         tileRipple: tileRipple,
@@ -5694,7 +5695,8 @@ function HomePage(_ref) {
         description: description,
         position: position,
         pathName: pathName,
-        revealAnimation: revealAnimation
+        revealAnimation: revealAnimation,
+        opacity: opacity
       }, uid);
     })]
   });
@@ -5750,7 +5752,8 @@ function Tile(_ref) {
       description = _ref.description,
       position = _ref.position,
       pathName = _ref.pathName,
-      revealAnimation = _ref.revealAnimation;
+      revealAnimation = _ref.revealAnimation,
+      opacity = _ref.opacity;
   var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__.useNavigate)();
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
@@ -5774,6 +5777,9 @@ function Tile(_ref) {
     },
     ref: ripple,
     onMouseDown: event,
+    style: {
+      opacity: opacity
+    },
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)((react_reveal_Bounce__WEBPACK_IMPORTED_MODULE_3___default()), {
       left: revealAnimation.left,
       right: revealAnimation.right,
@@ -5912,7 +5918,8 @@ var App = /*#__PURE__*/function (_Component) {
             top: true,
             bottom: false,
             delay: 0
-          }
+          },
+          opacity: 0.95
         }, {
           uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
           title: "Work Experience",
@@ -5925,7 +5932,8 @@ var App = /*#__PURE__*/function (_Component) {
             top: true,
             bottom: false,
             delay: 250
-          }
+          },
+          opacity: 0.95
         }, {
           uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
           title: "Projects",
@@ -5938,7 +5946,8 @@ var App = /*#__PURE__*/function (_Component) {
             top: false,
             bottom: true,
             delay: 750
-          }
+          },
+          opacity: 0.95
         }, {
           uid: (0,uid__WEBPACK_IMPORTED_MODULE_1__.uid)(),
           title: "Skills",
@@ -5951,7 +5960,8 @@ var App = /*#__PURE__*/function (_Component) {
             top: false,
             bottom: true,
             delay: 500
-          }
+          },
+          opacity: 0.95
         }]
       },
       AboutPage: {
@@ -12367,7 +12377,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".jq\\+chgq77Tpmiwc9K0C82w\\=\\= {\n  width: 50%;\n  height: 50%;\n  opacity: 0.9;\n}\n\n.\\+nsfoJ\\+v7VWyevq8toQIsA\\=\\= {\n  margin-top: 22%;\n  margin-left: auto;\n  margin-right: auto;\n  font-size: xx-large;\n  font-family: \"Courier New\", Courier, monospace;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  block-size: -webkit-fit-content;\n  block-size: -moz-fit-content;\n  block-size: fit-content;\n  align-items: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  color: #ebdbb2;\n}\n\n.\\+nsfoJ\\+v7VWyevq8toQIsA\\=\\=:hover {\n  font-weight: bold;\n}\n\n.sIOA898W\\+tHuwwQCy-1eHw\\=\\= {\n  margin-left: auto;\n  margin-right: auto;\n  font-size: x-large;\n  font-family: \"Courier New\", Courier, monospace;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  block-size: -webkit-fit-content;\n  block-size: -moz-fit-content;\n  block-size: fit-content;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  color: #ebdbb2;\n  opacity: 0;\n  transition: opacity 750ms;\n}\n\n.sIOA898W\\+tHuwwQCy-1eHw\\=\\=:hover {\n  font-weight: bold;\n}\n\n.Yya3fDE00nfYXnFiGZZ\\+PQ\\=\\= {\n  width: 50%;\n  height: 50%;\n  background-color: #282828;\n  color: white;\n  position: absolute;\n  transition: box-shadow 250ms ease-out;\n  position: fixed;\n}\n\n.Yya3fDE00nfYXnFiGZZ\\+PQ\\=\\=:hover {\n  cursor: pointer;\n}\n\n.Yya3fDE00nfYXnFiGZZ\\+PQ\\=\\=:hover .sIOA898W\\+tHuwwQCy-1eHw\\=\\= {\n  opacity: 1;\n}\n\n#npE40LDoqs9mlm0z1fhioQ\\=\\=:hover {\n  box-shadow: inset 50vw 0 0.001px #d79921;\n}\n\n#gV7-82C5MjcKpwiP46F8jA\\=\\=:hover {\n  box-shadow: inset -50vw 0 0.001px #458588;\n}\n\n#xfaTa9VXVrhAt-EztkUXxg\\=\\=:hover {\n  box-shadow: inset 50vw 0 0 0.001px #b16286;\n}\n\n#LkBh0KLqZN1ziAPI9ArZgg\\=\\=:hover {\n  box-shadow: inset -50vw 0 0 0.001px #98971a;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".jq\\+chgq77Tpmiwc9K0C82w\\=\\= {\n  width: 50%;\n  height: 50%;\n}\n\n.\\+nsfoJ\\+v7VWyevq8toQIsA\\=\\= {\n  margin-top: 22%;\n  margin-left: auto;\n  margin-right: auto;\n  font-size: xx-large;\n  font-family: \"Courier New\", Courier, monospace;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  block-size: -webkit-fit-content;\n  block-size: -moz-fit-content;\n  block-size: fit-content;\n  align-items: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  color: #ebdbb2;\n}\n\n.\\+nsfoJ\\+v7VWyevq8toQIsA\\=\\=:hover {\n  font-weight: bold;\n}\n\n.sIOA898W\\+tHuwwQCy-1eHw\\=\\= {\n  margin-left: auto;\n  margin-right: auto;\n  font-size: x-large;\n  font-family: \"Courier New\", Courier, monospace;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  block-size: -webkit-fit-content;\n  block-size: -moz-fit-content;\n  block-size: fit-content;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  color: #ebdbb2;\n  opacity: 0;\n  transition: opacity 750ms;\n}\n\n.sIOA898W\\+tHuwwQCy-1eHw\\=\\=:hover {\n  font-weight: bold;\n}\n\n.Yya3fDE00nfYXnFiGZZ\\+PQ\\=\\= {\n  width: 50%;\n  height: 50%;\n  background-color: #282828;\n  color: white;\n  position: absolute;\n  transition: box-shadow 250ms ease-out;\n  position: fixed;\n}\n\n.Yya3fDE00nfYXnFiGZZ\\+PQ\\=\\=:hover {\n  cursor: pointer;\n}\n\n.Yya3fDE00nfYXnFiGZZ\\+PQ\\=\\=:hover .sIOA898W\\+tHuwwQCy-1eHw\\=\\= {\n  opacity: 1;\n}\n\n#npE40LDoqs9mlm0z1fhioQ\\=\\=:hover {\n  box-shadow: inset 50vw 0 0.001px #d79921;\n}\n\n#gV7-82C5MjcKpwiP46F8jA\\=\\=:hover {\n  box-shadow: inset -50vw 0 0.001px #458588;\n}\n\n#xfaTa9VXVrhAt-EztkUXxg\\=\\=:hover {\n  box-shadow: inset 50vw 0 0 0.001px #b16286;\n}\n\n#LkBh0KLqZN1ziAPI9ArZgg\\=\\=:hover {\n  box-shadow: inset -50vw 0 0 0.001px #98971a;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"container": "jq+chgq77Tpmiwc9K0C82w==",

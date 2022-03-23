@@ -17,6 +17,7 @@ function HomePage({ tileRipple, timeoutDuration, tiles }) {
                     position,
                     pathName,
                     revealAnimation,
+                    opacity,
                     uid,
                 }) => (
                     <Tile
@@ -27,6 +28,7 @@ function HomePage({ tileRipple, timeoutDuration, tiles }) {
                         position={position}
                         pathName={pathName}
                         revealAnimation={revealAnimation}
+                        opacity={opacity}
                         key={uid}
                     />
                 )
